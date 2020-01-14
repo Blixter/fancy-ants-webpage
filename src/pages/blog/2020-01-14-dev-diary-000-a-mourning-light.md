@@ -11,8 +11,6 @@ tags:
 ---
 **Welcome!**
 
-
-
 This will be the first entry for our developer diary!\
 The main goal of this diary is two-folded.
 
@@ -23,14 +21,18 @@ Now on to the actual development!
 
 We started writing a tool in order to automatically create animations based on spritesheets.
 
+
+
+![](/img/AnimationCreationTool.JPG "Tool - Animaton Creator")
+
+
+
+
+
 By doing it this way we'll save a lot of manual labour in order to create an animation, add the correct sprite (Yeah, I know that should've one spritesheet with all frames but it was out of our control), and so on.
 
 Sure, there still are some manual additions in order to complete the animations, but the most time consuming parts are already done!
 
-
-
 Best regards,
 
 Hinken
-
-![](/img/AnimationCreationTool.JPG "Tool - Animaton Creator")
