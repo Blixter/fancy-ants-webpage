@@ -1,19 +1,33 @@
 ---
-templateKey: 'about-page'
+templateKey: "about-page"
 path: /about
-title: About our values
+title: About
+image: /img/about-fantasy.jpg
+heading: About
+description: >-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus. Aliquet risus feugiat in ante. Enim sit amet venenatis urna. Nunc congue nisi vitae suscipit tellus mauris a. Aliquet nibh praesent tristique magna. Amet nisl suscipit adipiscing bibendum. Varius morbi enim nunc faucibus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Lacus vel facilisis volutpat est velit egestas dui. Eget arcu dictum varius duis at consectetur. Vitae semper quis lectus nulla at volutpat diam ut. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Enim nec dui nunc mattis.
+
+    In vitae turpis massa sed elementum tempus. Nunc sed id semper risus in. Ornare arcu odio ut sem nulla pharetra. Faucibus purus in massa tempor. Lacus vestibulum sed arcu non. Hendrerit gravida rutrum quisque non tellus. Sodales ut etiam sit amet nisl purus in. Egestas quis ipsum suspendisse ultrices gravida. Ut enim blandit volutpat maecenas volutpat. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Sit amet dictum sit amet. Cursus metus aliquam eleifend mi in. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Sit amet nisl suscipit adipiscing. Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla. Diam sit amet nisl suscipit adipiscing bibendum
+employees:
+    information:
+        - image: /img/robin.jpeg
+          name: Robin Blixter
+          roll: Fullstack Developer
+          text: >
+              Lacus vel facilisis volutpat est velit egestas dui. Eget arcu dictum varius duis at consectetur. Vitae semper quis lectus nulla at volutpat diam ut. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Enim nec dui nunc mattis.
+        - image: /img/default.jpg
+          name: Simon Ledam
+          roll: CEO/Developer
+          text: >
+              Lacus vel facilisis volutpat est velit egestas dui. Eget arcu dictum varius duis at consectetur. Vitae semper quis lectus nulla at volutpat diam ut. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Enim nec dui nunc mattis.
+        - image: /img/default.jpg
+          name: Marcus
+          roll: Designer
+          text: >
+              Lacus vel facilisis volutpat est velit egestas dui. Eget arcu dictum varius duis at consectetur. Vitae semper quis lectus nulla at volutpat diam ut. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Enim nec dui nunc mattis.
+        - image: /img/default.jpg
+          name: Adam
+          roll: Developer
+          text: >
+              Lacus vel facilisis volutpat est velit egestas dui. Eget arcu dictum varius duis at consectetur. Vitae semper quis lectus nulla at volutpat diam ut. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Enim nec dui nunc mattis.
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
-
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
-
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
-
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
