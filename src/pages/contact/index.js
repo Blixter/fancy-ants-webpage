@@ -38,7 +38,7 @@ export default class Index extends React.Component {
       <Layout>
         <section className="section">
           <div className="container">
-            <div className="content">
+            <div className="content column is-10 is-offset-1">
               <h1>Contact</h1>
               <form
                 name="contact"
