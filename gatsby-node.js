@@ -2,22 +2,29 @@ const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const createPaginatedPages = require('gatsby-paginate')
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   return graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
+      allMarkdownRemark(
+        limit: 1000
+        sort: { order: DESC, fields: [frontmatter___date] }
+      ) {
         edges {
           node {
             id
+            excerpt(pruneLength: 400)
             fields {
               slug
             }
             frontmatter {
-              tags
+              title
               templateKey
+              date(formatString: "MMMM DD, YYYY")
+              tags
             }
           }
         }
@@ -29,17 +36,36 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    const postsAndPages = result.data.allMarkdownRemark.edges
 
-    posts.forEach(edge => {
+    // Post Pages:
+    let posts = []
+
+    postsAndPages.forEach(edge => {
+      console.log(edge.node.frontmatter)
+      if (_.isMatch(edge.node.frontmatter, { templateKey: 'blog-post' })) {
+        posts = posts.concat(edge)
+        console.log(posts)
+      }
+    })
+
+    createPaginatedPages({
+      edges: posts,
+      createPage: createPage,
+      pageTemplate: 'src/templates/blog.js',
+      pageLength: 4, // Optional defaults to 10
+      pathPrefix: 'blog', // Optional
+      context: {}, // Optional
+    })
+    postsAndPages.forEach(edge => {
       const id = edge.node.id
       createPage({
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
         component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`,
         ),
-        // additional data can be passed via context
+        // Additional data can be passed via context
         context: {
           id,
         },
@@ -49,7 +75,7 @@ exports.createPages = ({ actions, graphql }) => {
     // Tag pages:
     let tags = []
     // Iterate through each post, putting all found tags into `tags`
-    posts.forEach(edge => {
+    postsAndPages.forEach(edge => {
       if (_.get(edge, `node.frontmatter.tags`)) {
         tags = tags.concat(edge.node.frontmatter.tags)
       }
