@@ -2,7 +2,6 @@
 templateKey: "about-page"
 path: /about
 title: About
-image: /img/about-fantasy.jpg
 heading: About
 description: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem donec massa sapien faucibus. Aliquet risus feugiat in ante. Enim sit amet venenatis urna. Nunc congue nisi vitae suscipit tellus mauris a. Aliquet nibh praesent tristique magna. Amet nisl suscipit adipiscing bibendum. Varius morbi enim nunc faucibus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Lacus vel facilisis volutpat est velit egestas dui. Eget arcu dictum varius duis at consectetur. Vitae semper quis lectus nulla at volutpat diam ut. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Enim nec dui nunc mattis.

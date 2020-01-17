@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Fancy Ants Studios',
-    description:
-      'Indie Game Developers',
+    description: 'Indie Game Developers',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
