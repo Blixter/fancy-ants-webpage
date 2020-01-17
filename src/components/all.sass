@@ -139,16 +139,6 @@ $menu-label-color: $primary !important
   vertical-align: middle
   display: inline
 
-// blog roll
-.blog-list-item
-  background-color: $nord4 !important
-.blog-list-item header
-  display: flex
-  margin-bottom: 1em
-.blog-list-item .featured-thumbnail
-  flex-basis: 35%
-  margin: 0 1.5em 0 0
-
 // For a sticky footer
 html,
 body,
@@ -166,17 +156,39 @@ div[role="group"][tabindex],
 #content-wrapper
   flex: 1
 
+// blog roll
+.blog-list-item
+  background-color: $nord4 !important
+.blog-list-item header
+  display: flex
+  margin-bottom: 1em
+.blog-list-item .featured-thumbnail
+  flex-basis: 30%
+  margin: 0 1.5em 0 0
+.featured-thumbnail
+  min-height: 100px
+
 @import "~bulma"
 
 // responsiveness
-  +tablet-only
-  .blog-list-item .featured-thumbnail
-    flex-basis: 50%
-
-    +mobile
+@include tablet-only
   .blog-list-item header
     display: block
   .blog-list-item .featured-thumbnail
     text-align: center
-    max-width: 70%
+    max-width: 100%
     margin: 0 0 1em
+    min-height: 0
+
+@include mobile
+  .blog-list-item header
+    display: block
+  .blog-list-item .featured-thumbnail
+    text-align: center
+    max-width: 100%
+    margin: 0 0 1em
+    min-height: 0
+  .title
+    font-size: 1.3rem !important
+  .subtitle
+    font-size: 1.1rem !important
