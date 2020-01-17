@@ -8,11 +8,10 @@ const AboutPagePreview = ({ entry, getAsset }) => {
   if (data) {
     return (
       <AboutPageTemplate
-        image={data.image}
         title={data.title}
         heading={data.heading}
         description={data.description}
-        employees={data.employees ||  {information: [] }}
+        employees={data.employees || { information: [] }}
       />
     )
   } else {
