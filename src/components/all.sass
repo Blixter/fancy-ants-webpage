@@ -18,6 +18,10 @@ $primary-invert: $nord5
 $body-color: $primary
 $black: #2b2523
 
+code
+  color: $primary !important
+  background-color: $nord4 !important
+
 .navbar .navbar-menu
   box-shadow: none !important
 
@@ -39,6 +43,9 @@ $black: #2b2523
     padding: 0 2rem 1rem 0
     margin-bottom: 1.5rem
     margin-top: 0
+
+.mb-0
+  margin-bottom: 0 !important
 
 // Helper Classes
 .full-width-image-container
@@ -133,8 +140,8 @@ $menu-label-color: $primary !important
   display: inline
 
 // blog roll
-.blog-list-item.is-featured
-  background-color: $nord4
+.blog-list-item
+  background-color: $nord4 !important
 .blog-list-item header
   display: flex
   margin-bottom: 1em
