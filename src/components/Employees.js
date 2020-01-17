@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const EmployeeGrid = ({ gridItems }) => (
-  <div className="columns is-multiline">
+  <div className='columns is-multiline'>
     {gridItems.map(item => (
-      <div key={item.text} className="column is-6">
-        <section className="section">
-          <div className="has-text-centered">
+      <div key={item.text} className='column is-6'>
+        <section className='section'>
+          <div className='has-text-centered'>
             <div
               style={{
                 width: '240px',
@@ -17,8 +17,12 @@ const EmployeeGrid = ({ gridItems }) => (
               <PreviewCompatibleImage imageInfo={item} />
             </div>
           </div>
-          <div className="has-text-centered is-size-5 has-text-weight-bold">{item.name}</div>
-          <div className="has-text-centered has-text-weight-light is-size-7 is-italic">{item.roll}</div>
+          <div className='has-text-centered is-size-5 has-text-weight-bold'>
+            {item.name}
+          </div>
+          <div className='has-text-centered has-text-weight-light is-size-7 is-italic'>
+            {item.roll}
+          </div>
           <p>{item.text}</p>
         </section>
       </div>
@@ -33,7 +37,7 @@ EmployeeGrid.propTypes = {
       name: PropTypes.string,
       roll: PropTypes.string,
       text: PropTypes.string,
-    })
+    }),
   ),
 }
 
