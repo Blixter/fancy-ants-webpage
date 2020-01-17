@@ -76,7 +76,7 @@ const Navbar = class extends React.Component {
             <div className='navbar-end has-text-centered'>
               <a
                 className='navbar-item'
-                href='https://github.com/blixter'
+                href='https://github.com/Blixter/fancy-ants-webpage'
                 target='_blank'
                 rel='noopener noreferrer'
               >
