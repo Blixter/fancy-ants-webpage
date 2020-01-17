@@ -3,8 +3,7 @@ templateKey: blog-post
 title: 'Dev. Diary #000 - A Mourning Light'
 date: 2020-01-14T21:01:30.780Z
 description: 'Dev. Diary - Entry : 000 '
-featuredpost: true
-featuredimage: /img/favicon-32x32.png
+featuredimage: /img/AnimationCreationTool.JPG
 tags:
   - AML
   - DevDiary
