@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Employees from '../components/Employees'
-// import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-// import Content, { HTMLContent } from '../components/Content'
+var paragraphs = require('lines-to-paragraphs')
 
 export const AboutPageTemplate = ({
   title,
@@ -32,7 +31,7 @@ export const AboutPageTemplate = ({
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <h3 className='has-text-weight-semibold is-size-2'>{heading}</h3>
-              <p>{description}</p>
+              <div className='description' dangerouslySetInnerHTML={{ __html: paragraphs(description) }} />
             </div>
           </div>
           <div className='columns'>
