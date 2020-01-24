@@ -4,19 +4,17 @@ import { AboutPageTemplate } from '../../templates/about-page'
 
 const AboutPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
+  const entryInformation = entry.getIn(['data', 'employees', 'information'])
+  const information = entryInformation ? entryInformation.toJs() : []
 
-  if (data) {
-    return (
-      <AboutPageTemplate
-        title={data.title}
-        heading={data.heading}
-        description={data.description}
-        employees={data.employees || { information: [] }}
-      />
-    )
-  } else {
-    return <div>Loading...</div>
-  }
+  return (
+    <AboutPageTemplate
+      title={data.title}
+      heading={data.heading}
+      description={data.description}
+      employees={{ information }}
+    />
+  )
 }
 
 AboutPagePreview.propTypes = {
