@@ -42,10 +42,8 @@ exports.createPages = ({ actions, graphql }) => {
     let posts = []
 
     postsAndPages.forEach(edge => {
-      console.log(edge.node.frontmatter)
       if (_.isMatch(edge.node.frontmatter, { templateKey: 'blog-post' })) {
         posts = posts.concat(edge)
-        console.log(posts)
       }
     })
 
